@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.textBoxX3 = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.button12 = new DevComponents.DotNetBar.ButtonX();
             this.label12 = new System.Windows.Forms.Label();
             this.txtXOutput = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
@@ -43,7 +42,7 @@
             this.label30 = new System.Windows.Forms.Label();
             this.txtX = new System.Windows.Forms.TextBox();
             this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
+            this.btnReportABug = new DevComponents.DotNetBar.ButtonX();
             this.textBoxX1 = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.label11 = new System.Windows.Forms.Label();
             this.lblVersion = new System.Windows.Forms.Label();
@@ -144,10 +143,7 @@
             this.txtRegionZ = new System.Windows.Forms.TextBox();
             this.label36 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
-            this.buttonX2 = new DevComponents.DotNetBar.ButtonX();
-            this.buttonX3 = new DevComponents.DotNetBar.ButtonX();
-            this.buttonX4 = new DevComponents.DotNetBar.ButtonX();
-            this.buttonX5 = new DevComponents.DotNetBar.ButtonX();
+            this.btnCalculate3 = new DevComponents.DotNetBar.ButtonX();
             this.tabPage6.SuspendLayout();
             this.tabPage5.SuspendLayout();
             this.tabPage4.SuspendLayout();
@@ -177,7 +173,7 @@
             // tabPage6
             // 
             this.tabPage6.Controls.Add(this.textBoxX3);
-            this.tabPage6.Controls.Add(this.button12);
+            this.tabPage6.Controls.Add(this.btnCalculate3);
             this.tabPage6.Controls.Add(this.label12);
             this.tabPage6.Controls.Add(this.txtXOutput);
             this.tabPage6.Controls.Add(this.label13);
@@ -213,19 +209,6 @@
             this.textBoxX3.Size = new System.Drawing.Size(267, 215);
             this.textBoxX3.TabIndex = 23;
             this.textBoxX3.Text = resources.GetString("textBoxX3.Text");
-            // 
-            // button12
-            // 
-            this.button12.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.button12.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.button12.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.button12.Location = new System.Drawing.Point(3, 234);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(691, 56);
-            this.button12.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.button12.TabIndex = 1;
-            this.button12.Text = "Calculate";
-            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // label12
             // 
@@ -311,7 +294,7 @@
             // 
             // tabPage5
             // 
-            this.tabPage5.Controls.Add(this.buttonX1);
+            this.tabPage5.Controls.Add(this.btnReportABug);
             this.tabPage5.Controls.Add(this.textBoxX1);
             this.tabPage5.Controls.Add(this.label11);
             this.tabPage5.Controls.Add(this.lblVersion);
@@ -324,17 +307,17 @@
             this.tabPage5.Text = "Info";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
-            // buttonX1
+            // btnReportABug
             // 
-            this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX1.Location = new System.Drawing.Point(425, 13);
-            this.buttonX1.Name = "btnReportBug";
-            this.buttonX1.Size = new System.Drawing.Size(162, 47);
-            this.buttonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX1.TabIndex = 5;
-            this.buttonX1.Text = "Report a bug";
-            this.buttonX1.Click += new System.EventHandler(this.btnReportBug_Click);
+            this.btnReportABug.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnReportABug.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnReportABug.Location = new System.Drawing.Point(425, 13);
+            this.btnReportABug.Name = "btnReportBug";
+            this.btnReportABug.Size = new System.Drawing.Size(162, 47);
+            this.btnReportABug.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnReportABug.TabIndex = 5;
+            this.btnReportABug.Text = "Report a bug";
+            this.btnReportABug.Click += new System.EventHandler(this.btnReportBug_Click);
             // 
             // textBoxX1
             // 
@@ -1462,33 +1445,18 @@
             this.label37.TabIndex = 41;
             this.label37.Text = "X:";
             // 
-            // buttonX2
+            // btnCalculate3
             // 
-            this.buttonX2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX2.Location = new System.Drawing.Point(0, 0);
-            this.buttonX2.Name = "buttonX2";
-            this.buttonX2.TabIndex = 0;
-            // 
-            // buttonX3
-            // 
-            this.buttonX3.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX3.Location = new System.Drawing.Point(0, 0);
-            this.buttonX3.Name = "buttonX3";
-            this.buttonX3.TabIndex = 0;
-            // 
-            // buttonX4
-            // 
-            this.buttonX4.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX4.Location = new System.Drawing.Point(0, 0);
-            this.buttonX4.Name = "buttonX4";
-            this.buttonX4.TabIndex = 0;
-            // 
-            // buttonX5
-            // 
-            this.buttonX5.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX5.Location = new System.Drawing.Point(0, 0);
-            this.buttonX5.Name = "buttonX5";
-            this.buttonX5.TabIndex = 0;
+            this.btnCalculate3.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnCalculate3.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnCalculate3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnCalculate3.Location = new System.Drawing.Point(3, 234);
+            this.btnCalculate3.Name = "btnCalculate3";
+            this.btnCalculate3.Size = new System.Drawing.Size(691, 56);
+            this.btnCalculate3.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnCalculate3.TabIndex = 1;
+            this.btnCalculate3.Text = "Calculate";
+            this.btnCalculate3.Click += new System.EventHandler(this.btnCalculate3_Click);
             // 
             // Form1
             // 
@@ -1629,7 +1597,6 @@
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.TextBox txtX;
         private DevComponents.DotNetBar.Controls.ComboBoxEx potionSelector;
-        private DevComponents.DotNetBar.ButtonX button12;
         private DevComponents.DotNetBar.Controls.TextBoxX textBoxX1;
         private DevComponents.DotNetBar.ButtonX btnMineshaft;
         private DevComponents.DotNetBar.ButtonX btnStrongHold;
@@ -1649,19 +1616,16 @@
         private DevComponents.DotNetBar.Controls.TextBoxX textBoxX6;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label31;
-        private DevComponents.DotNetBar.ButtonX buttonX1;
+        private DevComponents.DotNetBar.ButtonX btnReportABug;
         private System.Windows.Forms.TabPage tabPage10;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.TextBox txtRegionX;
         private System.Windows.Forms.TextBox txtRegionZ;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Label label37;
-        private DevComponents.DotNetBar.ButtonX buttonX2;
-        private DevComponents.DotNetBar.ButtonX buttonX3;
-        private DevComponents.DotNetBar.ButtonX buttonX4;
-        private DevComponents.DotNetBar.ButtonX buttonX5;
         private System.Windows.Forms.TextBox txtRegionOutput;
         private System.Windows.Forms.Label label39;
+        private DevComponents.DotNetBar.ButtonX btnCalculate3;
     }
 }
 

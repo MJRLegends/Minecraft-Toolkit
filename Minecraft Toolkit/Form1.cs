@@ -1687,7 +1687,7 @@ namespace Minecraft_Toolkit
             System.Diagnostics.Process.Start("http://chunkbase.com/apps/ocean-monument-finder");
         }
 
-        private void button12_Click(object sender, EventArgs e)
+        private void btnCalculate3_Click(object sender, EventArgs e)
         {
             if (txtX.Text == "" || txtZ.Text == "")
             {

@@ -50,12 +50,9 @@
     <ApplicationIcon>MJR Minecraft logo.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevComponents.DotNetBar.Design">
-      <HintPath>..\..\Xbox 360 XRPC v2\Xbox 360 XRPC v2\bin\Debug\DevComponents.DotNetBar.Design.dll</HintPath>
-    </Reference>
     <Reference Include="DevComponents.DotNetBar2, Version=11.0.0.0, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Release\DevComponents.DotNetBar2.dll</HintPath>
+      <HintPath>..\..\..\..\Tools &amp; Programs\DevComponents.DotNetBar2.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
