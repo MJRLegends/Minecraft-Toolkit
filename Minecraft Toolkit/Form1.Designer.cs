@@ -42,12 +42,6 @@
             this.lbloutput = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.txtX = new System.Windows.Forms.TextBox();
-            this.updatestab = new System.Windows.Forms.TabPage();
-            this.button8 = new DevComponents.DotNetBar.ButtonX();
-            this.LatestVersionL = new System.Windows.Forms.Label();
-            this.MyVersionL = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
             this.textBoxX1 = new DevComponents.DotNetBar.Controls.TextBoxX();
@@ -155,7 +149,6 @@
             this.buttonX4 = new DevComponents.DotNetBar.ButtonX();
             this.buttonX5 = new DevComponents.DotNetBar.ButtonX();
             this.tabPage6.SuspendLayout();
-            this.updatestab.SuspendLayout();
             this.tabPage5.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -316,74 +309,6 @@
             this.txtX.Size = new System.Drawing.Size(238, 20);
             this.txtX.TabIndex = 13;
             // 
-            // updatestab
-            // 
-            this.updatestab.Controls.Add(this.button8);
-            this.updatestab.Controls.Add(this.LatestVersionL);
-            this.updatestab.Controls.Add(this.MyVersionL);
-            this.updatestab.Controls.Add(this.label8);
-            this.updatestab.Controls.Add(this.label9);
-            this.updatestab.Location = new System.Drawing.Point(4, 22);
-            this.updatestab.Name = "updatestab";
-            this.updatestab.Padding = new System.Windows.Forms.Padding(3);
-            this.updatestab.Size = new System.Drawing.Size(697, 293);
-            this.updatestab.TabIndex = 4;
-            this.updatestab.Text = "Update";
-            this.updatestab.UseVisualStyleBackColor = true;
-            // 
-            // button8
-            // 
-            this.button8.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.button8.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.button8.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.button8.Location = new System.Drawing.Point(3, 216);
-            this.button8.Name = "btnDownload";
-            this.button8.Size = new System.Drawing.Size(691, 74);
-            this.button8.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.button8.TabIndex = 10;
-            this.button8.Text = "Download";
-            this.button8.Click += new System.EventHandler(this.btnDownload_Click);
-            // 
-            // LatestVersionL
-            // 
-            this.LatestVersionL.AutoSize = true;
-            this.LatestVersionL.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LatestVersionL.Location = new System.Drawing.Point(186, 21);
-            this.LatestVersionL.Name = "LatestVersionL";
-            this.LatestVersionL.Size = new System.Drawing.Size(45, 16);
-            this.LatestVersionL.TabIndex = 9;
-            this.LatestVersionL.Text = "0.0.0.0";
-            // 
-            // MyVersionL
-            // 
-            this.MyVersionL.AutoSize = true;
-            this.MyVersionL.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MyVersionL.Location = new System.Drawing.Point(186, 43);
-            this.MyVersionL.Name = "MyVersionL";
-            this.MyVersionL.Size = new System.Drawing.Size(45, 16);
-            this.MyVersionL.TabIndex = 8;
-            this.MyVersionL.Text = "0.0.0.0";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(23, 43);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(157, 16);
-            this.label8.TabIndex = 7;
-            this.label8.Text = "Current Program Version:";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(23, 21);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(151, 16);
-            this.label9.TabIndex = 6;
-            this.label9.Text = "Latest Program Version:";
-            // 
             // tabPage5
             // 
             this.tabPage5.Controls.Add(this.buttonX1);
@@ -447,7 +372,7 @@
             this.lblVersion.Name = "lblVersion";
             this.lblVersion.Size = new System.Drawing.Size(72, 24);
             this.lblVersion.TabIndex = 1;
-            this.lblVersion.Text = "1.0.0.0";
+            this.lblVersion.Text = "1.0.0.9";
             // 
             // label10
             // 
@@ -1447,9 +1372,8 @@
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage6);
             this.tabControl1.Controls.Add(this.tabPage10);
-            this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Controls.Add(this.tabPage5);
-            this.tabControl1.Controls.Add(this.updatestab);
+            this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
@@ -1582,8 +1506,6 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabPage6.ResumeLayout(false);
             this.tabPage6.PerformLayout();
-            this.updatestab.ResumeLayout(false);
-            this.updatestab.PerformLayout();
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
             this.tabPage4.ResumeLayout(false);
@@ -1622,11 +1544,6 @@
         #endregion
 
         private System.Windows.Forms.TabPage tabPage6;
-        private System.Windows.Forms.TabPage updatestab;
-        private System.Windows.Forms.Label LatestVersionL;
-        private System.Windows.Forms.Label MyVersionL;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label lblVersion;
@@ -1714,7 +1631,6 @@
         private DevComponents.DotNetBar.Controls.ComboBoxEx potionSelector;
         private DevComponents.DotNetBar.ButtonX button12;
         private DevComponents.DotNetBar.Controls.TextBoxX textBoxX1;
-        private DevComponents.DotNetBar.ButtonX button8;
         private DevComponents.DotNetBar.ButtonX btnMineshaft;
         private DevComponents.DotNetBar.ButtonX btnStrongHold;
         private DevComponents.DotNetBar.ButtonX btnNetherFortness;

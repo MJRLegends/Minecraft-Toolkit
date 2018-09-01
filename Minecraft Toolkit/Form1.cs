@@ -68,7 +68,6 @@ namespace Minecraft_Toolkit
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            tabControl1.TabPages.Remove(updatestab);
             if(!Directory.Exists(Application.StartupPath + "/textures")){
                 DialogResult dialogResult = MessageBox.Show("You need the textures folder in the same place as the exe file!", "Error!", MessageBoxButtons.OK);
                 if(dialogResult == DialogResult.OK)
@@ -76,8 +75,6 @@ namespace Minecraft_Toolkit
                     Application.Exit();
                 }
             }
-
-            Checkforupdate();
 
             RecipeSelector.Items.Add("Redstone Repeater");
             RecipeSelector.Items.Add("Redstone Lamp");
@@ -1690,65 +1687,6 @@ namespace Minecraft_Toolkit
             System.Diagnostics.Process.Start("http://chunkbase.com/apps/ocean-monument-finder");
         }
 
-        string latestversion = "1.0.0.0";
-        string downlink = null;
-
-        private void btnDownload_Click(object sender, EventArgs e)
-        {
-            Process.Start(downlink);
-        }
-
-        private void Checkforupdate()
-        {
-            System.IO.Stream Str = null;
-            System.IO.StreamReader srRead = null;
-            System.IO.Stream Str2 = null;
-            System.IO.StreamReader srRead2 = null;
-            try
-            {
-                System.Net.WebRequest req = System.Net.WebRequest.Create("http://pastebin.com/raw.php?i=S4PdHVKd");
-                System.Net.WebResponse resp = req.GetResponse();
-                Str = resp.GetResponseStream();
-                srRead = new System.IO.StreamReader(Str);
-
-                latestversion = srRead.ReadToEnd();
-                Properties.Settings.Default.LatestVersion = latestversion;
-            }
-
-            catch (Exception)
-            {
-                MessageBox.Show("Could recieve latest version! Please check your internet connection!");
-            }
-
-            try
-            {
-                System.Net.WebRequest req2 = System.Net.WebRequest.Create("http://pastebin.com/raw.php?i=99LNUJ5h");
-
-                //i=zQS5MWLM
-                System.Net.WebResponse resp2 = req2.GetResponse();
-                Str2 = resp2.GetResponseStream();
-                srRead2 = new System.IO.StreamReader(Str2);
-
-                downlink = srRead2.ReadToEnd();
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Could recieve latest version! Please check your internet connection!");
-            }
-
-            LatestVersionL.Text = latestversion;
-            MyVersionL.Text = "1.0.0.9";
-            lblVersion.Text = MyVersionL.Text;
-
-            if (LatestVersionL.Text != MyVersionL.Text)
-            {
-                MessageBox.Show("Update available! Please go to the Update Tab to update!");
-                MyVersionL.ForeColor = Color.Red;
-                button8.Visible = true;
-                tabControl1.TabPages.Add(updatestab);
-            }
-        }
-
         private void button12_Click(object sender, EventArgs e)
         {
             if (txtX.Text == "" || txtZ.Text == "")
@@ -1784,7 +1722,7 @@ namespace Minecraft_Toolkit
 
         private void btnReportBug_Click(object sender, EventArgs e)
         {
-            Process.Start("https://www.surveymonkey.com/s/9H8P3K9");
+            Process.Start("https://github.com/MJRLegends/Minecraft-Toolkit/issues");
         }
 
         private void txtRegionX_TextChanged(object sender, EventArgs e)
